@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { Card, Button } from 'antd';
 import { CloseOutlined, CheckOutlined, WomanOutlined, ManOutlined, LoadingOutlined, DownloadOutlined, StopOutlined, EditOutlined } from '@ant-design/icons';
-import http from '../common/http-common';
-import { useLocalStorage } from '../common/useLocalStorage';
-import { dateToString } from '../common/formatting';
+import http from './http-common';
+import { useLocalStorage } from './useLocalStorage';
+import { dateToString } from './formatting';
 
 export default function AdoptionCard({ animal_id }) {
-
   let navigate = useNavigate();
+
   const [id, setId] = useLocalStorage("id", false);
   const [name, setName] = useLocalStorage("name", false);
   const [password, setPassword] = useLocalStorage("password", false);

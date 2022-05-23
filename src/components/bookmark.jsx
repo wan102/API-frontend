@@ -1,5 +1,5 @@
-import { useParams, useNavigate, useLocation, } from "react-router-dom";
-import { getDog, deleteDog } from "../data";
+import { useParams, useNavigate, useLocation, } from 'react-router-dom';
+import { getDog, deleteDog } from '../data';
 
 export default function Bookmark() {
   let navigate = useNavigate();

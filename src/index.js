@@ -1,17 +1,17 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import App from "./App";
-import Home from "./components/home";
-import Adoption from "./components/adoption";
-import AdoptionPage from "./common/adoptionpage";
-import Centres from "./components/centres";
-import Bookmark from "./components/bookmark";
-import Bookmarks from "./components/bookmarks";
-import Newcomer from "./components/newcomer";
-import Login from "./components/login";
-import Register from "./components/register";
-import UpdateAnimal from "./components/updateanimal";
-import NotFound from "./components/notfound";
+import Home from './components/home';
+import Adoption from './components/adoption';
+import AdoptionPage from './common/adoptionpage';
+import Centres from './components/centres';
+import Bookmark from './components/bookmark';
+import Bookmarks from './components/bookmarks';
+import Newcomer from './components/newcomer';
+import Login from './components/login';
+import Register from './components/register';
+import UpdateAnimal from './components/updateanimal';
+import NotFound from './components/notfound';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")

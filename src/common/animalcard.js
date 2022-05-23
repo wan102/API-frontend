@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { Card, Avatar } from 'antd';
 import { LoadingOutlined, WomanOutlined, ManOutlined } from '@ant-design/icons';
 //import { WomanOutlined, ManOutlined } from '@ant-design/icons';

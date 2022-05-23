@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Comment, List, Divider, Button } from 'antd';
 import http from '../common/http-common';
 import NewCommentCard from '../common/newcommentcard';
-import { useLocalStorage } from "../common/useLocalStorage";
+import { useLocalStorage } from '../common/useLocalStorage';
 
 export default ({ animal_id }) => {
   const [name, setName] = useLocalStorage("name", false);

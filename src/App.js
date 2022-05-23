@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from 'react-router-dom';
 import { Button } from 'antd';
 import './App.less';
-import { useLocalStorage } from "./common/useLocalStorage";
+import { useLocalStorage } from './common/useLocalStorage';
 
 export default function App() {
   const [name, setName] = useLocalStorage("name", false);

@@ -1,6 +1,7 @@
 import { Row, Col } from 'antd';
 import array_chunk from '../common/array_chunk';
 import Animalcard from '../common/animalcard';
+
 function AdoptionGrids({ animals }) {
   // const rows = array_chunk(animals, 4)
 

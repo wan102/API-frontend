@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Divider, Row, Col } from 'antd';
 import http from '../common/http-common';
 import BookmarksGrids from '../forms/bookmarksgrids';
-import { useLocalStorage } from "../common/useLocalStorage";
+import { useLocalStorage } from '../common/useLocalStorage';
 
 export default function Bookmarks() {
   const [id, setId] = useLocalStorage("id", false);

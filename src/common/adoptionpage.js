@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 import { Row, Col, Image } from 'antd';
-import AdoptionCard from '../common/adoptioncard'
+import AdoptionCard from './adoptioncard'
 import Comments from '../forms/comments'
 
 export default function AdoptionPage() {

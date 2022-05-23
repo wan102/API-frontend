@@ -7,7 +7,6 @@ import '../index.css';
 const { Meta } = Card;
 
 export default ({ centre }) => {
-
   return (
     <Card title={centre.name}>
       <Card.Grid style={{ width: '25%' }}><img width="250" height="250" style={{ objectFit: "cover" }} src={centre.image_url} /></Card.Grid>

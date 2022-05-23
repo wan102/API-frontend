@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 // import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Select, Input, Button, Checkbox, DatePicker } from 'antd';
 import { Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import moment from 'moment';
-import { useLocalStorage } from "../common/useLocalStorage";
+import { useLocalStorage } from '../common/useLocalStorage';
 import http from '../common/http-common';
 import Avatar from '../common/avatar';
 

@@ -1,4 +1,4 @@
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink } from 'react-router-dom';
 
 export function QueryNavLink({ to, ...props }) {
   let location = useLocation();

@@ -63,7 +63,6 @@ class Avatar extends React.Component {
         beforeUpload={beforeUpload}
         onChange={this.handleChange}
       >
-
         {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} />
           : this.props.preImage ? <img src={`http://127.0.0.1:8887${this.props.preImage}`} alt="avatar" style={{ width: '100%' }} />
             : uploadButton}

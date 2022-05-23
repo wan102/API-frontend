@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Input, Button } from 'antd';
 import { Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import http from '../common/http-common'
-import { useLocalStorage } from "../common/useLocalStorage";
+import { useLocalStorage } from '../common/useLocalStorage';
 
 const passwordRules = [
   { required: true, message: 'Please input your password!' }

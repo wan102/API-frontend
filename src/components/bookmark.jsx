@@ -1,15 +1,11 @@
-import { 
-  useParams,
-  useNavigate,
-  useLocation,
- } from "react-router-dom";
+import { useParams, useNavigate, useLocation, } from "react-router-dom";
 import { getDog, deleteDog } from "../data";
 
 export default function Bookmark() {
   let navigate = useNavigate();
   let location = useLocation();
   let params = useParams();
-  let dog = getDog(parseInt(params.bookmarkId, 10 ));
+  let dog = getDog(parseInt(params.bookmarkId, 10));
   console.log(location)
   return (
     <main style={{ padding: "1rem" }}>
@@ -24,8 +20,8 @@ export default function Bookmark() {
             deleteDog(dog.number);
             navigate("/bookmarks" + location.search);
           }}
-      >
-        Delete
+        >
+          Delete
       </button>
       </p>
     </main>

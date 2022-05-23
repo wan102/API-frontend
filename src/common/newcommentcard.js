@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Comment, Form, Input, Button} from 'antd';
-import { Card, Avatar } from 'antd';
+import { Comment, Form, Input, Button, Card, Avatar } from 'antd';
+//import { Card, Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 const { TextArea } = Input;
@@ -8,6 +8,7 @@ const { TextArea } = Input;
 const usernameRules = [
   { required: true, type: 'string', message: 'At least three letters!', min: 3 }
 ]
+
 const commentRules = [
   { required: true, type: 'string', message: 'At least three letters!', min: 3 }
 ]
@@ -18,13 +19,13 @@ const Editor = ({ name, isAdmin, onChange, onSubmit, value, loading }) => {
   useEffect(() => {
     console.log("run value", value)
     form.setFieldsValue({
-      user_name: name? isAdmin? name + "(Admin)": name + "(Member)": "",
-                      comment: ''
+      user_name: name ? isAdmin ? name + "(Admin)" : name + "(Member)" : "",
+      comment: ''
     });
   }, [value]);
 
-    return(<>
-     <Form
+  return (<>
+    <Form
       form={form}
       id="commentform"
       name="basic"
@@ -50,27 +51,27 @@ const Editor = ({ name, isAdmin, onChange, onSubmit, value, loading }) => {
           Add Comment
         </Button>
       </Form.Item>
-      </Form>
-    </>
-  )};
+    </Form>
+  </>
+  )
+};
 
-const NewCommentCard = ({isAdmin, name, handleSubmit, loading, comment, onChange}) => {
-
-
+const NewCommentCard = ({ isAdmin, name, handleSubmit, loading, comment, onChange }) => {
   return (
-        <Comment
-        avatar={<Avatar src="https://joeschmoe.io/api/v1/abc" />}
-        content={
-          <Editor
-            onSubmit={handleSubmit}
-            value={comment}
-            loading={loading}
-            name={name}
-            isAdmin={isAdmin}
-            onChange={onChange}
-          />
-        }
+    <Comment
+      avatar={<Avatar src="https://joeschmoe.io/api/v1/abc" />}
+      content={
+        <Editor
+          onSubmit={handleSubmit}
+          value={comment}
+          loading={loading}
+          name={name}
+          isAdmin={isAdmin}
+          onChange={onChange}
+        />
+      }
     />
-    )
+  )
 }
+
 export default NewCommentCard

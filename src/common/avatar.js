@@ -1,8 +1,8 @@
 import React from 'react';
-import 'antd/dist/antd.css';
-import '../index.css';
 import { Upload, message } from 'antd';
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
+import 'antd/dist/antd.css';
+import '../index.css';
 
 function getBase64(img, callback) {
   const reader = new FileReader();
@@ -43,7 +43,7 @@ class Avatar extends React.Component {
       );
     }
   };
-  
+
   render() {
     console.log(this.props.preImage);
     const { loading, imageUrl } = this.state;
@@ -63,10 +63,10 @@ class Avatar extends React.Component {
         beforeUpload={beforeUpload}
         onChange={this.handleChange}
       >
-      
-        {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} /> 
-        : this.props.preImage? <img src={`http://127.0.0.1:8887${this.props.preImage}`} alt="avatar" style={{ width: '100%' }} />
-        : uploadButton}
+
+        {imageUrl ? <img src={imageUrl} alt="avatar" style={{ width: '100%' }} />
+          : this.props.preImage ? <img src={`http://127.0.0.1:8887${this.props.preImage}`} alt="avatar" style={{ width: '100%' }} />
+            : uploadButton}
       </Upload>
     );
   }

@@ -14,7 +14,7 @@ export default function App() {
   }
   return (
     <div>
-      <h1>Love Animals</h1>
+      <h1>The Canine Shelter</h1>
       {name && <h5 style={{ float: "right", }} >Hi, {name}</h5>}
       {/* <nav style={{ paddingBottom: "1rem" }} > */}
       {name && <Link style={{ float: "right", paddingRight: "1rem", }} onClick={handleLogOut} to="/" >LogOut</Link>}

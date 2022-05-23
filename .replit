@@ -1,2 +1,2 @@
-run="npm run dev"
+run="npm start"
 entrypoint="src/index.js"

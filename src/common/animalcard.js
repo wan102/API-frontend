@@ -1,11 +1,10 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-
+import { Card, Avatar } from 'antd';
+import { LoadingOutlined, WomanOutlined, ManOutlined } from '@ant-design/icons';
+//import { WomanOutlined, ManOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 import '../index.css';
-import { Card, Avatar } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
-import { WomanOutlined, ManOutlined } from '@ant-design/icons';
 
 export default ({animal}) => {
   let navigate = useNavigate();
